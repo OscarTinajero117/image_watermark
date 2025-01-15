@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+* Add 'getImageDimensions' method.
+
 ## 0.1.1
 
 * Upgrade packages.
