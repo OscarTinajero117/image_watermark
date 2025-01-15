@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1
+
+* Upgrade packages.
+* Upgrade example packages.
+* Add iOS config.
+* Change deprecated variables.
+
 ## 0.1.0
 
 * Upgrade image package.
