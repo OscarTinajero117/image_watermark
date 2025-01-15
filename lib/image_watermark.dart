@@ -158,6 +158,10 @@ class ImageWatermark {
     return result;
   }
 
-  static ui.Color _getColor(Color color) =>
-      ui.ColorRgba8(color.red, color.green, color.blue, color.alpha);
+  static ui.Color _getColor(Color color) => ui.ColorRgba8(
+        color.r.toInt(),
+        color.g.toInt(),
+        color.b.toInt(),
+        color.a.toInt(),
+      );
 }
