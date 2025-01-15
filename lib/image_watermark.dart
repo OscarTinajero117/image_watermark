@@ -158,12 +158,8 @@ class ImageWatermark {
     return result;
   }
 
-  static ui.Color _getColor(Color color) => ui.ColorRgba8(
-        color.r.toInt(),
-        color.g.toInt(),
-        color.b.toInt(),
-        color.a.toInt(),
-      );
+  static ui.Color _getColor(Color color) =>
+      ui.ColorRgba8(color.red, color.green, color.blue, color.alpha);
 
   /// This method gets the dimensions of an image from a Uint8List
   /// in the form of a Size object.
