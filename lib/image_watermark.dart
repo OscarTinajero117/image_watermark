@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:image/image.dart' as ui;
@@ -164,4 +165,16 @@ class ImageWatermark {
         color.b.toInt(),
         color.a.toInt(),
       );
+
+  /// This method gets the dimensions of an image from a Uint8List
+  /// in the form of a Size object.
+  ///
+  /// The width and height of the Size object are the width and height
+  /// of the image in pixels.
+  static Future<Size?> getImageDimensions(Uint8List imgBytes) async {
+    final image = ui.decodeImage(imgBytes);
+    if (image == null) return null;
+
+    return Size(image.width.toDouble(), image.height.toDouble());
+  }
 }
